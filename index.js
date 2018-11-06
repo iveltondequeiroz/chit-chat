@@ -13,6 +13,6 @@ app.use(express.static('public'))
 // socket setup
 const io = socket(server)
 io.on('connection', (socket) => {
-	console.log('made socket connetion')
+	console.log('made socket connetion', socket.id)
 })
 
